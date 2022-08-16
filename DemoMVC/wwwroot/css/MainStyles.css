@@ -1,22 +1,25 @@
 ﻿body {
-    margin:40px;
-    background-color:aquamarine;
-    height:800px;
-    border:5px solid red;
+    margin: 40px;
+    background-color: aquamarine;
+    height: 800px;
+    border: 5px solid red;
 }
-h1{
-    background-color:antiquewhite;
-    color:darkblue;
-    text-align:center;
-}
-table{
-    width:100%;
 
+h1 {
+    background-color: antiquewhite;
+    color: darkblue;
+    text-align: center;
 }
-tr:hover{
-    color:gold;
-    background-color:coral;
+
+table {
+    width: 100%;
 }
-th{
-    font-weight:bolder;
+
+tr:hover {
+    color: gold;
+    background-color: coral;
+}
+
+th {
+    font-weight: bolder;
 }
