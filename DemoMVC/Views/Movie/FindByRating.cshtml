@@ -1,0 +1,38 @@
+﻿<h1>
+Search Movies By rating</h1>
+
+@using (Html.BeginForm()){
+	<p>
+		Select Rating : 
+		@Html.DropDownList("rating")
+	</p>
+	<p>
+		<input type="submit" value="Find Movie"/>
+	</p>
+}
+<hr />
+@if(ViewBag.MovieList!=null){
+
+	<table>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>Year</th>
+				<th>Rating</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach(var data in @ViewBag.MovieList)
+			{
+				<tr>
+					<td>@data.Id</td>
+					<td>@data.Name</td>
+					<td>@data.Year</td>
+					<td>@data.Rating</td>
+				</tr>
+			}
+
+		</tbody>
+	</table>
+}
